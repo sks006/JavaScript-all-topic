@@ -46,3 +46,25 @@ console.log(null>=0)
 console.log(undefined<0)
 console.log(undefined>1)
 console.log(undefined==0)
+
+
+
+// stack =(premitive data), Heap=(non-premitive data)
+/**
+ * it is a string & premitive data, it work in stack
+ */
+let str1="helllo bangladesh"
+let str2="bye bye banglasesh"
+/**
+ * it is a object & non-premitive data, it work in heap
+ */
+let shihab={
+    Email:"shihab@gmail.com",
+    Number:123456780,
+    worth:"3000k"
+}
+str1=shihab.Email
+str2=shihab.Email
+
+console.log(str1)
+console.log(str2)
