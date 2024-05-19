@@ -1,0 +1,296 @@
+Sure, here is a description and a small example for each function listed:
+
+anchor()
+
+Creates an HTML anchor element (<a>).
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.anchor("openai");
+console.log(result); // <a name="openai">OpenAI</a>
+at()
+
+Returns the character at the specified index.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.at(1);
+console.log(result); // p
+big()
+
+Creates an HTML <big> element.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.big();
+console.log(result); // <big>OpenAI</big>
+blink()
+
+Creates an HTML <blink> element.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.blink();
+console.log(result); // <blink>OpenAI</blink>
+bold()
+
+Creates an HTML <b> element.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.bold();
+console.log(result); // <b>OpenAI</b>
+charAt()
+
+Returns the character at the specified index.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.charAt(1);
+console.log(result); // p
+charCodeAt()
+
+Returns the Unicode value of the character at the specified index.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.charCodeAt(1);
+console.log(result); // 112
+codePointAt()
+
+Returns a non-negative integer that is the Unicode code point value.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.codePointAt(1);
+console.log(result); // 112
+concat()
+
+Concatenates the string arguments to the calling string and returns a new string.
+javascript
+Copy code
+let str1 = "Open";
+let str2 = "AI";
+let result = str1.concat(str2);
+console.log(result); // OpenAI
+constructor
+
+Returns the function that created the prototype.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.constructor;
+console.log(result); // [Function: String]
+endsWith()
+
+Checks if a string ends with the specified string/characters.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.endsWith("AI");
+console.log(result); // true
+fixed()
+
+Creates an HTML <tt> element (deprecated in HTML5).
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.fixed();
+console.log(result); // <tt>OpenAI</tt>
+fontcolor()
+
+Creates an HTML <font> element with a color attribute (deprecated in HTML5).
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.fontcolor("red");
+console.log(result); // <font color="red">OpenAI</font>
+fontsize()
+
+Creates an HTML <font> element with a size attribute (deprecated in HTML5).
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.fontsize(4);
+console.log(result); // <font size="4">OpenAI</font>
+includes()
+
+Checks if a string contains the specified string/characters.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.includes("AI");
+console.log(result); // true
+indexOf()
+
+Returns the position of the first occurrence of a specified value.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.indexOf("A");
+console.log(result); // 4
+isWellFormed()
+
+Determines whether the string is well-formed UTF-16 (introduced in ECMAScript 2023).
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.isWellFormed();
+console.log(result); // true
+italics()
+
+Creates an HTML <i> element.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.italics();
+console.log(result); // <i>OpenAI</i>
+lastIndexOf()
+
+Returns the position of the last occurrence of a specified value.
+javascript
+Copy code
+let str = "OpenAI AI";
+let result = str.lastIndexOf("AI");
+console.log(result); // 7
+length
+
+Returns the length of a string.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.length;
+console.log(result); // 6
+link()
+
+Creates an HTML <a> element with an href attribute.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.link("https://openai.com");
+console.log(result); // <a href="https://openai.com">OpenAI</a>
+localeCompare()
+
+Compares two strings in the current locale.
+javascript
+Copy code
+let str1 = "a";
+let str2 = "b";
+let result = str1.localeCompare(str2);
+console.log(result); // -1 (or another negative number)
+match()
+
+Retrieves the result of matching a string against a regular expression.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.match(/A/g);
+console.log(result); // ["A"]
+matchAll()
+
+Returns an iterator of all results matching a string against a regular expression, including capturing groups.
+javascript
+Copy code
+let str = "OpenAI AI";
+let result = str.matchAll(/AI/g);
+console.log([...result]); // [{...}, {...}] (each match object)
+normalize()
+
+Returns the Unicode Normalization Form of the string.
+javascript
+Copy code
+let str = "\u1E9B\u0323"; // ẛ̣
+let result = str.normalize();
+console.log(result); // ṩ
+padEnd()
+
+Pads the current string from the end with a given string until the resulting string reaches the given length.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.padEnd(10, ".");
+console.log(result); // OpenAI....
+padStart()
+
+Pads the current string from the start with a given string until the resulting string reaches the given length.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.padStart(10, ".");
+console.log(result); // ....OpenAI
+repeat()
+
+Returns a new string with a specified number of copies of the string it was called on.
+javascript
+Copy code
+let str = "AI";
+let result = str.repeat(3);
+console.log(result); // AIAIAI
+replace()
+
+Returns a new string with some or all matches of a pattern replaced by a replacement.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.replace("AI", "ML");
+console.log(result); // OpenML
+replaceAll()
+
+Returns a new string with all matches of a pattern replaced by a replacement.
+javascript
+Copy code
+let str = "AI AI";
+let result = str.replaceAll("AI", "ML");
+console.log(result); // ML ML
+search()
+
+Executes a search for a match between a regular expression and the string.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.search(/AI/);
+console.log(result); // 4
+slice()
+
+Extracts a section of a string and returns it as a new string.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.slice(0, 4);
+console.log(result); // Open
+small()
+
+Creates an HTML <small> element.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.small();
+console.log(result); // <small>OpenAI</small>
+split()
+
+Splits a String object into an array of strings by separating the string into substrings.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.split("A");
+console.log(result); // ["Open", "I"]
+startsWith()
+
+Determines whether a string begins with the characters of a specified string.
+javascript
+Copy code
+let str = "OpenAI";
+let result = str.startsWith("Open");
+console.log(result); // true
+
+
+
+
+
+
+
+
+
+
+Continue generating
+
