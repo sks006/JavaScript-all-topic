@@ -1,0 +1,3 @@
+Both languages JS and Java use constructors for object creation and initialization, but the syntax, invocation, and underlying principles differ significantly.
+
+constructors: It serves as a blueprint for creating multiple instances of the same type of object.
