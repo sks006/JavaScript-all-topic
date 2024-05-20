@@ -2,6 +2,7 @@
   i. Globar execution context(EC).
  ii. Memory phase.
         # In this step all variable given memory space as a undefind var = undefind
-        # only 
- ii. executional phase .
-        #every va
+        # only function memory space as a defind function = defind
+iii. executional phase .
+        #every variable execute properly .
+        # function create a sub execution block that also have memory and executional phase
