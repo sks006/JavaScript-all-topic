@@ -1,2 +1,7 @@
 ========= js execution context ========
- i.Globar execution context(EC).
+  i. Globar execution context(EC).
+ ii. Memory phase.
+        # In this step all variable given memory space as a undefind var = undefind
+        # only 
+ ii. executional phase .
+        #every va
