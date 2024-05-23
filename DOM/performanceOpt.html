@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+  function addLanguage(langName) {
+               for (let i = 0; i < 10000; i++) {
+                    //check-in THE CPU CONSUMPTION BY USING THE TREE STRUCTURE dATA TYPE IN THIS METHOD EVERY TIME we do appendChild(li); the hole data structure call from the top.
+                    const li = document.createElement("li");
+                    li.innerHTML = `${langName}`;
+                    document.querySelector(".language").appendChild(li);
+               }
+          }
+          //   addLanguage("python");
+          //   addLanguage("typescript");
+          //   addLanguage("JavaScript");
+          //   addLanguage("Ruby");
+          //   addLanguage("C++");
+
+          function addOptiLanguage(langName) {
+               for (let i = 0; i < 10000; i++) {
+                    //check-in THE CPU CONSUMPTION IN THIS METHOD FOR NODE INDEX THE TRACKING OF INDEX NUMBER IS EASER AN MORE EFFICIENT 
+
+                    const li = document.createElement("li");
+                    li.appendChild(document.createTextNode(langName));
+                    document.querySelector(".language").appendChild(li);
+               }
+          }
+          addOptiLanguage("golang");
+          addOptiLanguage("python");
+          addOptiLanguage("javaScript");
+          addOptiLanguage("Ruby");
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+</script>
+</html>
