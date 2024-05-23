@@ -1,0 +1,7 @@
+// querySelectorAll will return a Nodelist
+const paragraphs = document.querySelectorAll(".paragraph")
+console.log(paragraphs)
+
+// getElementsByClassName will return an HTMLCollection
+const paragraphs = document.getElementsByClassName("paragraph")
+console.log(paragraphs)
