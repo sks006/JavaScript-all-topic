@@ -1,0 +1,36 @@
+/** @format */
+/**
+this css show how to center a div
+*/
+body {
+    font-family: "roboto";
+}
+h4 {
+    text-align: center;
+}
+.container {
+    height: 450px;
+    width: 300px;
+    background: #e4a24c;
+    margin: 50px auto;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 0.75rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 6px solid;
+    border-radius: 0.35rem;
+    height: 300px;
+    width: 100%; /* Make sure the card does not exceed container's width */
+}
+.card-img-top {
+    border: 6px solid rgba(20, 201, 214, 0.884);
+}
