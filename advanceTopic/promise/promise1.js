@@ -25,38 +25,49 @@ new Promise(function(resolve, reject){
     console.log("Async 2 resolved");
 })
 
-const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        resolve({username: "Chai", email: "chai@example.com"})
-    }, 1000)
-})
+//TODO : PASS THE VALUE BY resolve
 
-promiseThree.then(function(user){
-    console.log(user);
-})
+// const promiseThree = new Promise(function (resolve, reject) {
+//      setTimeout(function () {
+//           resolve({
+//                username: "shihab",
+//                email: "sks@gmail.com",
+//                number: 23434312323,
+//           });
+//      }, 1000);
+// });
+// promiseThree.then(function (user) {
+//      setTimeout(() => {
+//           console.log(user);
+//      }, 2000);
+// });
+//TODO : .then().catch().finally() this is chaining abd it will help in database
 
-const promiseFour = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error = true
-        if (!error) {
-            resolve({username: "hitesh", password: "123"})
-        } else {
-            reject('ERROR: Something went wrong')
-        }
-    }, 1000)
-})
-
- promiseFour
- .then((user) => {
-    console.log(user);
-    return user.username
-}).then((username) => {
-    console.log(username);
-}).catch(function(error){
-    console.log(error);
-}).finally(() => console.log("The promise is either resolved or rejected"))
-
-
+// const promiseFour = new Promise(function (resolve, reject) {
+//      setTimeout(function () {
+//           let err = false;
+//           if (!err) {
+//                resolve({
+//                     username: "shihab",
+//                     email: "sks@gmail.com",
+//                     number: 23434312323,
+//                });
+//           } else {
+//                reject("your cookies are rejected");
+//           }
+//      }, 1000);
+// });
+// promiseFour
+//      .then((user) => {
+//           console.log(user);
+//           return user.username;
+//      })
+//      .then((username) => {
+//           console.log(username);
+//      })
+//      .catch(function (error) {
+//           console.log(error);
+//      });
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -68,6 +79,7 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
+
 
 async function consumePromiseFive(){
     try {
